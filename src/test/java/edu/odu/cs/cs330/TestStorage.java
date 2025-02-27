@@ -109,6 +109,7 @@ public class TestStorage
             buffer -> {
                 try {
                     Storage.writeSummary(buildResult, buffer);
+                    buffer.close();
                 }
                 catch (IOException _exc) {
                     // Do nothing
